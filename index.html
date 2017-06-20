@@ -760,7 +760,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <blockquote>
 <p><strong>Tempo com índice:</strong> 23,7s</p>
 </blockquote>
+<blockquote>
+<p>Não houve muita melhora no tempo, o único indice que consiguiu melhorar um pouco o tempo e diminuir o <em>QUERY COST</em> foi:</p>
+</blockquote>
 <div class="sourceCode"><pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">create</span> <span class="kw">index</span> idx_nation_name <span class="kw">on</span> NATION(n_name);</code></pre></div>
+<blockquote>
+<p>Ainda sim, não é uma mudança tão grande, porque a tabela <strong>NATION</strong> tem poucos registros</p>
+</blockquote>
 <ul>
 <li><strong>Execution plain sem índice</strong></li>
 </ul>
